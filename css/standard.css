@@ -637,7 +637,9 @@ body{
 	opacity: 0.5;
 }
 
-
+.appendix{
+	display: none;
+}
 
 
 .music-icon {
