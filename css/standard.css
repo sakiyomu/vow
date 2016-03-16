@@ -43,8 +43,63 @@ body{
 }
 
 #wrapper{
+}
+
+/* about start */
+.about #wrapper .screen{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.about #wrapper .screen .shot,
+.about #wrapper .screen .shot li{
+	width: 100%;
+}
+
+.about #wrapper .screen .shot li.i1{
+	background: url(../img/about01.jpg) center center no-repeat;
 	background-size: cover;
 }
+.about #wrapper .screen .shot li.i2{
+	background: url(../img/about02.jpg) center center no-repeat;
+	background-size: cover;
+}
+.about #wrapper .screen .shot li.i3{
+	background: url(../img/about03.jpg) center center no-repeat;
+	background-size: cover;
+}
+.about #wrapper .screen .shot li.i4{
+	background: url(../img/about04.jpg) center center no-repeat;
+	background-size: cover;
+}
+.about #wrapper .screen .shot li.i5{
+	background: url(../img/about05.jpg) center center no-repeat;
+	background-size: cover;
+}
+.about #wrapper .screen .shot li.i6{
+	background: url(../img/about06.jpg) center center no-repeat;
+	background-size: cover;
+}
+.about #wrapper .screen .shot li.i7{
+	background: url(../img/about07.jpg) center center no-repeat;
+	background-size: cover;
+}
+.about #wrapper .screen .shot li.i8{
+	background: url(../img/about08.jpg) center center no-repeat;
+	background-size: cover;
+}
+.about #wrapper .screen .shot li.i9{
+	background: url(../img/about09.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+
+
+/* about end */
+
+
 
 #wrapper .sldArea{
 	position: fixed;
@@ -61,10 +116,12 @@ body{
 
 #wrapper .sldArea .slider li.bgwhg{
 	background: url(../img/whg_b.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 #wrapper .sldArea .slider li.bgdxc{
 	background: url(../img/dxc_b.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 #wrapper .fakebg{
@@ -77,25 +134,27 @@ body{
 
 #wrapper.whg{
 	background: url(../img/whg.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 #wrapper.whg .fakebg{
 	background: url(../img/whg_b.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 #wrapper.dxc{
 	background: url(../img/dxc.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 #wrapper.dxc .fakebg{
 	background: url(../img/dxc_b.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 
 
 #intro{
-	//background: url(../img/whg_b.jpg) center center no-repeat;
-	background-size: cover;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -104,9 +163,11 @@ body{
 
 #intro.bgwhg{
 	background: url(../img/whg_b.jpg) center center no-repeat;
+	background-size: cover;
 }
 #intro.bgdxc{
 	background: url(../img/dxc_b.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 
@@ -213,10 +274,12 @@ body{
 
 #intro .inner .location a.whg{
 	background: url(../img/thumb_whg.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 #intro .inner .location a.dxc{
 	background: url(../img/thumb_dxc.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 #intro .inner .location a.whg:hover,
@@ -720,5 +783,13 @@ body{
 	#🌹 .attention{
 		top: -20%;
 		transform: scale(1.5,1.5);
+	}
+}
+
+@media only screen and (orientation: landscape) {
+	#🌹 .attention{
+		top: 233px;
+		width: 280px;
+		margin-left: -140px;
 	}
 }

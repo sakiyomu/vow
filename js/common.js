@@ -20,7 +20,7 @@ $(document).ready(function(){
 	var windH = $(document).height();
 
 
-	$("#wrapper, .sldArea, .slider, .slider li, .fakebg, #intro").height(windH);
+	$("#wrapper, .sldArea, .slider, .slider li, .screen, .shot, .shot li, .fakebg, #intro").height(windH);
 
 	if (windW > windH){
 		$(".nebula").height(windW).css("marginTop",-windW/2).css("marginLeft",-windW/2);
@@ -30,7 +30,16 @@ $(document).ready(function(){
 
 
 
-	$('.slider').bxSlider({
+	$('.screen .shot').bxSlider({
+		auto: true,
+		speed: 1000,
+		pause: 5000,
+		mode: 'fade'
+		//pagerCustom: '.location',
+		//controls: false
+	});
+
+	$('.sldArea .slider').bxSlider({
 		auto: false,
 		mode: 'fade',
 		pagerCustom: '.location',
