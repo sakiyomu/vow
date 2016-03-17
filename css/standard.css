@@ -698,7 +698,7 @@ body{
 
 #wrapper .ind{
 	position: fixed;
-	bottom: 5px;
+	top: 5px;
 	left: 5px;
 	animation: 3s infinite swing;
 }
@@ -786,7 +786,7 @@ body{
 	}
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 750px) and (orientation: landscape) {
 	#🌹 .attention{
 		top: 233px;
 		width: 280px;
