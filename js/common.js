@@ -75,6 +75,7 @@ $(document).ready(function(){
 	$(".name2").html(nick2);
 	$(".p1").html(gender1);
 	$(".p2").html(gender2);
+	$("title").html(nick1 + "对" + nick2 + "使用了传说中的海誓山盟 | 剑网三")
 
 
 	setTimeout(function(){

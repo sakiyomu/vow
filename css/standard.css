@@ -38,11 +38,11 @@ body{
 	font-size:		2rem;
 	line-height:		1.6;
 	background:		#fff;
-	color:			#FF8000;
-	text-shadow:		1px 1px 1px #333;
 }
 
 #wrapper{
+	color:			#FF8000;
+	text-shadow:		1px 1px 1px #333;
 }
 
 /* about start */
@@ -784,6 +784,29 @@ body{
 		top: -20%;
 		transform: scale(1.5,1.5);
 	}
+
+	#share{
+		display: block;
+		position: fixed;
+		top: 5px;
+		right: 5%;
+		text-align: right;
+		font-size: 12px;
+		color: #fff;
+		animation: 20s linear infinite blink;
+	}
+
+	@keyframes blink{
+	from{opacity:0;}
+	70%{opacity:0;}
+	80%{opacity:1;}
+	90%{opacity:1;}
+	to{opacity:0;}
+}
+
+	.bdshare-slide-button-box{
+		display: none !important;
+	}
 }
 
 @media only screen and (max-width: 750px) and (orientation: landscape) {
@@ -791,5 +814,9 @@ body{
 		top: 233px;
 		width: 280px;
 		margin-left: -140px;
+	}
+
+	.bdshare-slide-button-box{
+		display: none !important;
 	}
 }
