@@ -95,6 +95,26 @@ body{
 	background-size: cover;
 }
 
+.about #wrapper .serif{
+	position: fixed;
+	top: 15%;
+	left: 50%;
+	margin: 0px 0 0 -160px;
+	width: 320px;
+	height: 76px;
+}
+
+.about #wrapper .serif .line{
+	width: 200px;
+	height: 64px;
+}
+
+.about #wrapper .serif .line li{
+	font-size: 24px;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #fff;
+}
 
 
 /* about end */

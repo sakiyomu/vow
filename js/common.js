@@ -35,9 +35,18 @@ $(document).ready(function(){
 		auto: true,
 		speed: 1000,
 		pause: 5000,
-		mode: 'fade'
-		//pagerCustom: '.location',
-		//controls: false
+		mode: 'fade',
+		controls: false,
+		pager: false
+	});
+
+	$('.serif .line').bxSlider({
+		auto: true,
+		speed: 1000,
+		pause: 5000,
+		mode: 'fade',
+		controls: false,
+		pager: false
 	});
 
 	$('.sldArea .slider').bxSlider({
