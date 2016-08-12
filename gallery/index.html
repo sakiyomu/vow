@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>今夕何夕</title>
+  <link href="css/foundation.css" rel="stylesheet" type="text/css" />
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+</head>
+  <body>
+
+    <div class="row">
+      <div class="large-4 columns">
+        <h3>扬州</h3>
+        <p>江头飞花入幽梦<br>柳梢明月碎客心<br>独行闹市无人问<br>青灯剑影响素琴</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src="img/6_1.jpg" />
+          <img src="img/6_2.jpg" />
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="large-4 columns">
+        <h3>昆仑</h3>
+        <p>凌云绝壑接穹宇<br>冰璃玉境问幽玄<br>风出空谷听萧瑟<br>寒月一轮映雪山</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src="img/5_1.jpg" />
+          <img src="img/5_2.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-4 columns">
+        <h3>昆仑</h3>
+        <p>昆仑皑皑千山雪<br>白首盼君归</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src="img/4_1.jpg" />
+          <img src="img/4_2.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-4 columns">
+        <h3>瞿塘峡</h3>
+        <p>曲山飞翠舞张狂<br>泥金巧妆压帝王<br>水榭楼台谁长乐<br>空留绿林映霞裳</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src="img/3_1.jpg" />
+          <img src="img/3_2.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-4 columns">
+        <h3>七秀</h3>
+        <p>七秀剑舞动四方<br>水云仙乐演宫商<br>莲步笙歌相知起<br>一船星月坐听香</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src="img/2_1.jpg" />
+          <img src="img/2_2.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-4 columns">
+        <h3>七秀</h3>
+        <p>西子湖畔西子情<br>楼外楼中雨霖铃<br>画廊绣舫霓裳舞<br>小桥流水叶娉婷</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src="img/1_1.jpg" />
+          <img src="img/1_2.jpg" />
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="../js/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+    $(window).load(function(){
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+    });
+    </script>
+  </body>
+</html>
