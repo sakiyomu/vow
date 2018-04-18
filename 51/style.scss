@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+/* -----------------------------------------------------------
+reset
+----------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* scroll fix */
+html {
+  overflow-y: scroll;
+  font-size: 62.5%;
+  /* 10px */
+}
+div, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li, form, input, textarea, button, table, tr, th, td, article, aside, footer, header, hgroup, nav, section, a, span {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+object,
+embed {
+  vertical-align: top;
+}
+
+hr, legend {
+  display: none;
+  border: none;
+}
+
+abbr, acronym, fieldset {
+  border: 0;
+}
+
+tr, th, td, caption {
+  vertical-align: top;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+/* clearfix
+ * ------------------------- */
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+
+img {
+  border: 0;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+@keyframes shake {
+5%{transform:rotate(15deg);transform:rotate(15deg)}
+10%{transform:rotate(-10deg);transform:rotate(-10deg)}
+15%{transform:rotate(5deg);transform:rotate(5deg)}
+20%{transform:rotate(-5deg);transform:rotate(-5deg)}
+25%,to{transform:rotate(0deg);transform:rotate(0deg)}
+}
+
+@keyframes shake-opacity {
+  4% {
+    transform: translate(1px, -3px) rotate(-1.5deg);
+     }
+  8% {
+    transform: translate(-1px, -3px) rotate(-0.5deg);
+     }
+  12% {
+    transform: translate(4px, 4px) rotate(-1.5deg);
+     }
+  16% {
+    transform: translate(3px, 4px) rotate(1.5deg);
+     }
+  20% {
+    transform: translate(0px, 4px) rotate(2.5deg);
+     }
+  24% {
+    transform: translate(3px, -3px) rotate(2.5deg);
+     }
+  28% {
+    transform: translate(-4px, 5px) rotate(1.5deg);
+     }
+  32% {
+    transform: translate(5px, 1px) rotate(0.5deg);
+     }
+  36% {
+    transform: translate(-1px, 2px) rotate(2.5deg);
+     }
+  0%,40%, 100% {
+    transform: translate(0, 0) rotate(0); } }
+
+
+
+body{
+  font-family:'微软雅黑','Microsoft YaHei',sans-serif,Helvetica,Arial;
+  font-size:12px;
+  line-height:1.8;
+  color:#333;
+  background-color: #efefef;
+}
+
+.main{
+  .list{
+    padding:0 5%;
+    .tit{
+      font-size:36px;
+      font-weight: bold;
+      text-align: center;
+      margin-top:5%;
+    }
+    .con{
+      margin-top:5%;
+      .bd{
+        margin-bottom:3%;
+        position: relative;
+        img{
+          width:100%;
+        }
+        p{
+          font-size:24px;
+          text-align: center;
+          line-height:200%;
+        }
+      }
+    }
+  }
+  .list2{
+    background: url("bg.jpg") repeat center center;
+    background-size: cover;
+    height:800px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    .con{
+      text-align: center;
+      h4{
+        font-size:24px;
+        line-height:200%;
+        text-align: center;
+        color:#fff;
+        text-shadow: 1px 1px 1px #666;
+      }
+      a{
+        width:200px;
+        font-size:24px;
+        text-align: center;
+        text-decoration: none;
+        background: #cc0000;
+        color: #fff;
+        line-height:150%;
+        display: block;
+        margin:30px auto;
+        &.btn{
+          background: #fff;
+          border:2px solid #666;
+          color: #666;
+        }
+        &.btn-xt{
+          position: relative;
+          animation: shake 3s infinite;
+          span{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left:0;
+            top:0;
+          }
+        }
+      }
+      img{
+        animation: shake-opacity 2s infinite;
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0">
+    <title>五一邀请函</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+    <div class="list">
+        <div class="tit">
+            五一邀请函
+        </div>
+        <div class="con">
+            <div class="bd">
+                <img src="img1.jpg"/>
+                <p>这里有花有酒有喵</p>
+            </div>
+            <div class="bd">
+                <img src="img2.jpg"/>
+                <p>有山有水有老琴爹</p>
+            </div>
+            <div class="bd">
+                <img src="img3.jpg"/>
+                <p>我在山水间备下筵席</p>
+            </div>
+            <div class="bd">
+                <img src="img4.jpg"/>
+                <p>我在阳光下举起镜头</p>
+            </div>
+        </div>
+    </div>
+    <div class="list2">
+        <div class="con">
+            <h4>
+                等待一只美少女翩翩而来<br>
+                共度一个现充的五一假期
+            </h4>
+            <a href="http://vow.jekyllhy.de/whg.html?n1=%E5%BC%A5%E6%89%A7%E6%B0%A4&p1=%E4%BE%A0%E5%A3%AB&n2=%E5%81%B7%E5%96%B5&p2=%E5%A5%B3%E4%BE%A0" class="btn-xt">接　受</a>
+            <a href="javascript:void(0);" class="btn">拒　绝</a>
+            <img class="shake" src="img5.jpg"/>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.superscrollorama.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script>
+    $(function () {
+        var controller = $.superscrollorama();
+
+        var len = $('.list .bd').length;
+        for(var i = 0;i < len; i++){
+            var listbdeq = $('.list .bd').eq(i);
+            if(i < len / 2){
+                if(i % 2 == 0){
+                    controller.addTween($('.list .bd').eq(0), TweenMax.fromTo(listbdeq, 1, {
+                        css:{opacity:0, right:'40px'},
+                        immediateRender: true,
+                        ease: Quad.easeInOut
+                    }, {
+                        css:{opacity:1, right:'0px'},
+                        ease: Quad.easeInOut
+                    }), 0, 0, false);
+                }else{
+                    controller.addTween($('.list .bd').eq(0), TweenMax.fromTo(listbdeq, 1, {
+                        css:{opacity:0, left:'40px'},
+                        immediateRender: true,
+                        ease: Quad.easeInOut
+                    }, {
+                        css:{opacity:1, left:'0px'},
+                        ease: Quad.easeInOut
+                    }), 0, 0, false);
+                }
+            }else {
+                if(i % 2 == 0){
+                    controller.addTween($('.list .bd').eq(2), TweenMax.fromTo(listbdeq, 1, {
+                        css:{opacity:0, right:'40px'},
+                        immediateRender: true,
+                        ease: Quad.easeInOut
+                    }, {
+                        css:{opacity:1, right:'0px'},
+                        ease: Quad.easeInOut
+                    }), 0, 0, false);
+                }else{
+                    controller.addTween($('.list .bd').eq(2), TweenMax.fromTo(listbdeq, 1, {
+                        css:{opacity:0, left:'40px'},
+                        immediateRender: true,
+                        ease: Quad.easeInOut
+                    }, {
+                        css:{opacity:1, left:'0px'},
+                        ease: Quad.easeInOut
+                    }), 0, 0, false);
+                }
+            }
+
+        };
+
+        controller.addTween('.list2', TweenMax.fromTo('.list2', 2, {
+            css:{opacity:0},
+            immediateRender: true,
+            ease: Quad.easeInOut
+        }, {
+            css:{opacity:1},
+            ease: Quad.easeInOut
+        }), 0, 0, false);
+
+        $('.btn').mousedown(function () {
+            var x = parseInt(Math.random()*window.innerWidth);
+            if(window.innerWidth - x < 80){
+                x = parseInt(Math.random()*100);
+            }
+            var y = parseInt(Math.random()*window.innerHeight);
+            if(window.innerHeight - y < 80){
+                x = parseInt(Math.random()*100);
+            }
+            $(this).css({
+                "position":'fixed',
+                "left":x,
+                "top":y,
+                "margin":'0'
+            });
+        });
+    })
+</script>
+</body>
+</html>
